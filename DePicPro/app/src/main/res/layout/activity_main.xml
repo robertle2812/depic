@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+    <include layout="@layout/social_bar"/>
+    <include layout="@layout/text_bar"/>
+    <include layout="@layout/filters_bar"/>
+    <include layout="@layout/transparency_bar"/>
+    <include layout="@layout/frameworks_bar"/>
+    <include layout="@layout/bottom_bar"/>
+    <RelativeLayout
+        android:id="@+id/framework_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="145dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        >
+
+    </RelativeLayout>
+
+    <include layout="@layout/left_menu_bar"/>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="18dp"
+        android:src="@drawable/depic1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        />
+
+    <ImageView
+        android:id="@+id/settingButton"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="14dp"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:src="@drawable/btn_settings_off"
+        />
+    <ImageView
+        android:id="@+id/goPro"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/btn_pro_version"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/replace_pic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="71dp"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/btn_replace_pictur"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/deleteContainer"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/btn_trash"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9000"
+        android:gravity="center"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

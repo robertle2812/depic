@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/text_layout"
+    android:layout_height="68dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="70dp"
+    android:visibility="invisible"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/switch_mode_text_button"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="@dimen/padding_element"
+        android:src="@drawable/btn_colors_types"
+        />
+    <include layout="@layout/text_font_bar"/>
+    <include layout="@layout/text_color_bar"/>
+
+
+</LinearLayout>

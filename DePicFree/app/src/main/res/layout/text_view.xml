@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/textView"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:background="#0000"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:textColor="#000"
+            android:background="#0000"
+            android:id="@+id/edtext"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:minHeight="34dp"
+            android:textSize="34dp"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:maxLines="1"
+        />
+
+        <TextView
+            android:textColor="#000"
+            android:id="@+id/text"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="34dp"
+            android:minHeight="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="text"
+            android:maxLines="1"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/resize_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom"
+        android:visibility="invisible"
+        android:src="@drawable/btn_text_resize"
+        />
+
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:src="@drawable/btn_text_delete"
+        />
+    <include layout="@layout/btn_move"/>
+</FrameLayout>

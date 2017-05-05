@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_text_layout"
+    android:orientation="horizontal" android:layout_width="0dp"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:scrollbars="none"
+        >
+
+            <LinearLayout
+                android:id="@+id/colorsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingRight="8dp"
+                >
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:id="@+id/btn_color_1"
+                    android:src="@drawable/btn_color_1_on"
+                    />
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:src="@drawable/btn_color_2_off"
+                    />
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:src="@drawable/btn_color_3_off"
+                    />
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:src="@drawable/btn_color_4_off"
+                    />
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:src="@drawable/btn_color_5_off"
+                    />
+                <ImageView
+                    style="@style/element_flotant_bar_panel"
+                    android:src="@drawable/btn_color_6_off"
+                    />
+            </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

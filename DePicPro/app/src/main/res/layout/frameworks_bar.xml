@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/framework_layout"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/dimens_element"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:id="@+id/framework_scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            >
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_1_off"
+                 />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_2_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_3_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_4_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_5_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_6_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_7_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_8_off"
+                />
+            <ImageView
+                style="@style/element_flotant_bar_panel"
+                android:src="@drawable/btn_frame_9_off"
+                />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

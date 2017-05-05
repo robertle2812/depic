@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="75dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bkgr"
+    android:gravity="center_horizontal"
+    android:id="@+id/leftMenuBar"
+    android:translationX="-80dp"
+    >
+
+
+            <ImageView
+                android:layout_marginTop="80dp"
+                android:id="@+id/rate_us"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_rate_app"
+                />
+            <ImageView
+                android:id="@+id/restore_purchases"
+                android:layout_marginTop="20dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_share_app_restore"
+                />
+    <ImageView
+        android:id="@+id/group_social"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/btn_group_app"
+        />
+
+    <LinearLayout
+        android:id="@+id/group_container"
+        android:layout_width="34dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/facebook_group"
+            android:layout_marginTop="20dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:clickable="true"
+            android:src="@drawable/btn_share_app_facebook"
+            />
+        <ImageView
+            android:id="@+id/instagram_group"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:src="@drawable/btn_share_app_instagram"
+
+            />
+
+    </LinearLayout>
+            <ImageView
+                android:id="@+id/share_left_menu_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/btn_share_app"
+                />
+            <include layout="@layout/share_left_menu"/>
+
+
+</LinearLayout>
